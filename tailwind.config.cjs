@@ -5,7 +5,10 @@ module.exports = {
       "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+      fontFamily: {
+          'kanit': ['Kanit', 'sans-serif'],
+      },
+      extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
