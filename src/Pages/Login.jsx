@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export const Login = () => {
     return (
         <div className={'h-[89.75vh] bg-[#000103]'}>
@@ -12,7 +14,11 @@ export const Login = () => {
                             <label className={'text-lg'}>Password</label>
                             <input type="password" placeholder="password" className="input input-bordered w-full" />
                         </div>
-                        <div className={'py-2'}>
+                        <div>
+                            <span>You don't have an account? </span>
+                            <Link to={"/register"} className={"text-primary"}>Register.</Link>
+                        </div>
+                        <div className={'py-1'}>
                             <button className={'btn btn-primary btn-block mt-2'}>
                                 Log in
                             </button>
